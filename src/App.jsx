@@ -20,7 +20,7 @@ const CAREER_OPPORTUNITIES = 'https://forms.gle/ZHoxtqSevi5erxBP6';
 // const INTERNSHIPS = 'https://forms.gle/ufaVVvDsHcXRvWZc8';
 const EMAIL = 'yashshukla2411@gmail.com';
 const PHONE = '+918305144924';
-const WORKSHOP_DATE = new Date('2025-12-28T10:00:00+05:30');
+const WORKSHOP_DATE = new Date('2026-10-04T10:00:00+05:30');
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
@@ -164,7 +164,7 @@ useEffect(() => {
   useEffect(() => {
   const interval = setInterval(() => {
     const now = new Date().getTime();
-    const target = new Date('2025-12-28T10:00:00+05:30').getTime();
+    const target = new Date('2026-01-04T10:00:00+05:30').getTime();
     const distance = target - now;
     
     if (distance > 0) {
@@ -2210,12 +2210,12 @@ width: 100%;
                 Join India's First Tech Revolution
               </p>
               <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                Limited to 30 seats only! Be part of Dewas' first offline skill ecosystem. Register now for our introductory workshop on December 28, 2025.
+                Limited to 50 seats only! Be part of Dewas' first offline skill ecosystem. Register now for our introductory workshop on January 04, 2026.
               </p>
               
               <div style={{ background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(234, 88, 12, 0.1))', border: '2px solid #ef4444', borderRadius: '16px', padding: '1rem', marginBottom: '2rem' }}>
                 <p style={{ fontSize: '1.1rem', fontWeight: 700, color: '#ef4444', margin: 0 }}>
-                  🔥 Only 30 Seats Available! 🔥
+                  🔥 Only 50 Seats Available! 🔥
                 </p>
               </div>
 
@@ -2363,7 +2363,7 @@ width: 100%;
           </p>
 
           <div className="limited-banner" onClick={() => window.open(JOIN_WORKSHOP, '_blank')}>
-            <p className="limited-text">🔥 LIMITED - Only 30 Seats! Click to Register 🔥</p>
+            <p className="limited-text">🔥 LIMITED - Only 50 Seats! Click to Register 🔥</p>
           </div>
           <div className="countdown" style={{ marginBottom: '1rem' ,marginTop: 'auto'}}>
   <div className="countdown-item">
@@ -2586,7 +2586,7 @@ width: 100%;
           <div className="workshop-section animate-on-scroll">
             <h2 className="section-title">Skilastra's First Introductory Workshop</h2>
             <p style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
-              24 December — Limited Availability
+              04 January 2026 — Limited Availability
             </p>
 
             <div className="countdown">
