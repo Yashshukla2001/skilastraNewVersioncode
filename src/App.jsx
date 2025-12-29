@@ -20,7 +20,7 @@ const CAREER_OPPORTUNITIES = 'https://forms.gle/ZHoxtqSevi5erxBP6';
 // const INTERNSHIPS = 'https://forms.gle/ufaVVvDsHcXRvWZc8';
 const EMAIL = 'yashshukla2411@gmail.com';
 const PHONE = '+918305144924';
-const WORKSHOP_DATE = new Date('2026-10-04T10:00:00+05:30');
+const WORKSHOP_DATE = new Date('2026-01-11T10:00:00+05:30');
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
@@ -164,7 +164,7 @@ useEffect(() => {
   useEffect(() => {
   const interval = setInterval(() => {
     const now = new Date().getTime();
-    const target = new Date('2026-01-04T10:00:00+05:30').getTime();
+    const target = new Date('2026-01-11T10:00:00+05:30').getTime();
     const distance = target - now;
     
     if (distance > 0) {
@@ -1184,8 +1184,10 @@ width: 100%;
 
 .track-card li::before {
   content: '✓';
-  position: absolute;
+  position: relative;
   left: 0;
+  {/* margin-right: 0.75rem; */}
+  padding-right: 0.5rem;
   color: var(--accent-purple);
   font-weight: 700;
 }
@@ -2210,7 +2212,7 @@ width: 100%;
                 Join India's First Tech Revolution
               </p>
               <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', marginBottom: '2rem', lineHeight: 1.6 }}>
-                Limited to 50 seats only! Be part of Dewas' first offline skill ecosystem. Register now for our introductory workshop on January 04, 2026.
+                Limited to 50 seats only! Be part of Dewas' first offline skill ecosystem. Register now for our introductory session on January 11, 2026.
               </p>
               
               <div style={{ background: 'linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(234, 88, 12, 0.1))', border: '2px solid #ef4444', borderRadius: '16px', padding: '1rem', marginBottom: '2rem' }}>
@@ -2221,7 +2223,7 @@ width: 100%;
 
 <div style={{ marginBottom: '2rem', marginTop: '2rem' }}>
   <h2 style={{ fontSize: '1rem', fontWeight: 700, marginBottom: '1rem', background: 'linear-gradient(135deg, #a855f7, #3b82f6)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-                Workshop Starts In:
+                First Free Offline Introductory Session Starts In:
               </h2>
   <div style={{ display: 'flex', gap: '0.75rem', justifyContent: 'center', flexWrap: 'wrap' }}>
     <div style={{ background: 'var(--bg-glass)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '12px', padding: '0.75rem 1rem', minWidth: '70px', textAlign: 'center' }}>
@@ -2251,7 +2253,7 @@ width: 100%;
                     setShowModal(false);
                   }}
                 >
-                  Join Workshop - Register Now
+                  Join First Free Introductory Session - Register Now
                 </button>
                 <button 
                   className="btn-secondary"
@@ -2386,7 +2388,7 @@ width: 100%;
 
           <div className="hero-ctas">
             <button className="btn-primary" onClick={() => window.open(JOIN_WORKSHOP, '_blank')}>
-              Join Workshop
+              Join First Free Introductory Session
             </button>
             <button className="btn-secondary" onClick={() => window.open(GOOGLE_FORM_AMBASSADOR, '_blank')}>
               Apply for Ambassador
@@ -2584,9 +2586,9 @@ width: 100%;
       <section id="workshop" className="section">
         <div className="container">
           <div className="workshop-section animate-on-scroll">
-            <h2 className="section-title">Skilastra's First Introductory Workshop</h2>
+            <h2 className="section-title">Skilastra's First Free Offline Introductory Session</h2>
             <p style={{ fontSize: '1.5rem', marginBottom: '1rem', color: 'var(--text-secondary)' }}>
-              04 January 2026 — Limited Availability
+              11 January 2026 — Limited Availability
             </p>
 
             <div className="countdown">
