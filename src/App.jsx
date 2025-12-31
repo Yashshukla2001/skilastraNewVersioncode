@@ -4288,7 +4288,7 @@ const LandingPage = () => {
     <div className="lp-impact-grid">
       <div className="lp-impact-card">
         <div className="lp-impact-number">
-          <span className="lp-counter" data-target="99">0</span>+
+          <span className="lp-counter" data-target="99">90</span>+
         </div>
         <div className="lp-impact-label">Students Guided</div>
         <p className="lp-impact-desc">Career clarity sessions conducted</p>
@@ -4296,7 +4296,7 @@ const LandingPage = () => {
 
       <div className="lp-impact-card">
         <div className="lp-impact-number">
-          <span className="lp-counter" data-target="90">0</span>+
+          <span className="lp-counter" data-target="90">80</span>+
         </div>
         <div className="lp-impact-label">Career Paths Clarified</div>
         <p className="lp-impact-desc">Personalized roadmaps created</p>
@@ -4304,7 +4304,7 @@ const LandingPage = () => {
 
       <div className="lp-impact-card">
         <div className="lp-impact-number">
-          <span className="lp-counter" data-target="45">0</span>+
+          <span className="lp-counter" data-target="45">35</span>+
         </div>
         <div className="lp-impact-label">Real Projects Discussed</div>
         <p className="lp-impact-desc">Hands-on learning experiences</p>
@@ -4312,7 +4312,7 @@ const LandingPage = () => {
 
       <div className="lp-impact-card">
         <div className="lp-impact-number">
-          <span className="lp-counter" data-target="20">0</span>+
+          <span className="lp-counter" data-target="20">15</span>+
         </div>
         <div className="lp-impact-label">Partner Network</div>
         <p className="lp-impact-desc">Industry mentors & collaborators</p>
