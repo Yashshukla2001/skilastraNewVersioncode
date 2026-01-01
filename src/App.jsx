@@ -3037,8 +3037,8 @@ import logo from '../public/assests/logo.png';
 import Exsora from '../public/assests/Exsora.png';
 import Founderimg from '../public/assests/founderimg.png';
 import Foundersmall from '../public/assests/foundersmall.png';
-import Team1 from '../public/assests/ayush1.jpg';
-import Team2 from '../public/assests/harsh1.jpg';
+import Team1 from '../public/assests/Team1.jpg';
+import Team2 from '../public/assests/Team2.jpg';
 import Team3 from '../public/assests/saloni.jpg';
 
 const WHATSAPP_NUMBER = '+918305144924';
@@ -11175,14 +11175,14 @@ font-size: 0.85rem;
 
         <div className="team-card animate-on-scroll">
           <img src={Team1} alt="Team Member" className="team-img" />
-          <h4>Ayush Hiwase</h4>
-          <p>AI & Automation Specialist</p>
+          <h4>Rajni Yadav</h4>
+          <p>Tech & Marketing Support Mentor</p>
         </div>
 
         <div className="team-card animate-on-scroll">
           <img src={Team2} alt="Team Member" className="team-img" />
-          <h4>Harsh Gupta</h4>
-          <p>Development Expert</p>
+          <h4>Nikunj Gutpa</h4>
+          <p>AI & Automation Support Mentor</p>
         </div>
       </div>
     </div>
