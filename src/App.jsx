@@ -3779,66 +3779,82 @@ const LandingPage = () => {
   };
 
   const personas = [
-    { 
-      icon: '🎓', 
-      title: 'Confused Students', 
-      desc: 'Unsure what career path to choose or which skills to learn first' 
-    },
-    { 
-      icon: '🤔', 
-      title: 'Skill-Seekers', 
-      desc: 'Want to learn but don\'t know where to start or what matters' 
-    },
-    { 
-      icon: '💼', 
-      title: 'Job Aspirants', 
-      desc: 'Preparing for interviews but lacking confidence and direction' 
-    },
-    { 
-      icon: '🚀', 
-      title: 'Growth-Minded', 
-      desc: 'Ready to invest in themselves but need expert guidance first' 
-    }
+      {
+    icon: '🎓',
+    title: 'College Students',
+    desc: 'Confused about skills, career paths, and what actually matters in the industry'
+  },
+  {
+    icon: '📱',
+    title: 'YouTube Learners',
+    desc: 'Watched many tutorials but still lack confidence and clarity'
+  },
+  {
+    icon: '🧑‍💻',
+    title: 'Online Course Buyers',
+    desc: 'Completed courses but unsure how to apply skills in real life'
+  },
+  {
+    icon: '🔄',
+    title: 'Dropouts / Gap-Year Students',
+    desc: 'Want a restart but fear wasting more time or money'
+  }
   ];
 
   const benefits = [
-    ' Clear career roadmap based on your interests and market demand',
-    ' Skill assessment - what you need vs what you have',
-    ' Industry insights from mentors with real-world experience',
-    ' Personalized learning path recommendations',
-    ' Understanding of offline vs online learning effectiveness',
-    ' Direct interaction with founder and Skilastra ecosystem'
+     'Clear understanding of how Skilastra trains students practically',
+  'Reality check of your current skill level',
+  'Clarity on what skills industry actually needs',
+  'Difference between online learning vs offline growth',
+  'Step-by-step learning roadmap (no hype)',
+  'Direct interaction with mentors & founders'
   ];
 
   const howItWorks = [
-    { 
-      step: '1', 
-      title: 'One-on-One Discussion', 
-      desc: 'We understand your current situation, goals, and challenges in a personal conversation' 
-    },
-    { 
-      step: '2', 
-      title: 'Skill Mapping', 
-      desc: 'We identify gaps between where you are and where you want to be professionally' 
-    },
-    { 
-      step: '3', 
-      title: 'Personalized Roadmap', 
-      desc: 'You receive a clear, actionable plan with specific skills and timeline' 
-    },
-    { 
-      step: '4', 
-      title: 'Next Steps Clarity', 
-      desc: 'Understand exactly what to do next, whether you join Skilastra or not' 
-    }
-  ];
+  {
+    step: '1',
+    title: 'Reality Check',
+    desc: 'Understand where you truly stand in skills and mindset'
+  },
+  {
+    step: '2',
+    title: 'Skill Awareness',
+    desc: 'Learn which skills matter and which don’t'
+  },
+  {
+    step: '3',
+    title: 'System Explanation',
+    desc: 'See how Skilastra actually trains students offline'
+  },
+  {
+    step: '4',
+    title: 'Next-Step Clarity',
+    desc: 'Know exactly what to do next — with or without joining'
+  }
+];
 
   const whySkilastra = [
-    { icon: '🏢', title: 'Offline First', desc: 'Real accountability, real progress. No online distractions.' },
-    { icon: '👥', title: 'Expert Mentors', desc: 'Learn from professionals working in real companies.' },
-    { icon: '💪', title: 'Proven Results', desc: '420+ students transformed, 50+ real projects executed.' },
-    { icon: '🎯', title: 'Career-Focused', desc: 'Skills that get you hired, not just certified.' }
-  ];
+  {
+    icon: '🏢',
+    title: 'Offline-First Learning',
+    desc: 'Better focus, discipline, and confidence than online'
+  },
+  {
+    icon: '🛠',
+    title: 'Practical System',
+    desc: 'Learning through real projects, not just theory'
+  },
+  {
+    icon: '🧠',
+    title: 'Mindset + Skill',
+    desc: 'We build thinking ability, not just technical knowledge'
+  },
+  {
+    icon: '🎯',
+    title: 'Student-First Approach',
+    desc: 'No forced sales. Only honest guidance'
+  }
+];
 
   const testimonials = [
     { 
@@ -3891,7 +3907,7 @@ const LandingPage = () => {
         <div className="lp-sticky-inner">
           <div className="lp-sticky-left">
             <span className="lp-sticky-pulse-dot"></span>
-            <span className="lp-sticky-text">🔥 Free Clarity Session - Only 30 Seats!</span>
+            <span className="lp-sticky-text">🔥 Free Offline Career Reality Session - Only 30 Seats!</span>
           </div>
           <button 
             id="lp-cta-sticky"
@@ -3957,40 +3973,40 @@ const LandingPage = () => {
           {/* Badge */}
           <div className="lp-badge-premium">
             <span className="lp-badge-shine"></span>
-            <span>✨ Free Offline Clarity Session</span>
+            <span>✨ Free Offline Introductory Reality Session</span>
           </div>
           
           {/* Title */}
           <h1 className="lp-hero-title-premium">
-            Confused About Your
+            Still Confused After
             <span className="lp-title-gradient-premium">
-              Career Path?
+              Online Courses & YouTube?
               <span className="lp-title-glow-premium"></span>
             </span>
           </h1>
           
           <p className="lp-hero-subtitle-premium">
-            Get personalized guidance in a <strong>FREE offline introductory clarity session</strong>. 
-            Discover what skills you need, which path suits you best, and how to build a future-ready career.
-          </p>
+              This <strong>FREE offline clarity session</strong>. 
+            helps students understand how
+  real skills, real projects, and real careers are actually built — before joining any batch.</p>
 
           {/* Value Props */}
           <div className="lp-value-grid">
             <div className="lp-value-item">
               <span className="lp-value-icon">🎯</span>
-              <span>Career Clarity</span>
+              <span>Career + Skill Clarity</span>
             </div>
             <div className="lp-value-item">
               <span className="lp-value-icon">📊</span>
-              <span>Skill Mapping</span>
+              <span>Reality of Learning</span>
             </div>
             <div className="lp-value-item">
               <span className="lp-value-icon">🗺️</span>
-              <span>Learning Roadmap</span>
+              <span>Practical Roadmap</span>
             </div>
             <div className="lp-value-item">
               <span className="lp-value-icon">👨‍🏫</span>
-              <span>Expert Guidance</span>
+              <span>Offline Mentor Interaction</span>
             </div>
           </div>
 
@@ -4025,7 +4041,7 @@ const LandingPage = () => {
             <span className="lp-cta-bg-premium"></span>
             <span className="lp-cta-content-premium">
               <span className="lp-cta-icon-premium">🚀</span>
-              Book Your FREE Clarity Session Now
+              Book Your FREE Introductory Session Now
               <span className="lp-cta-arrow-premium">→</span>
             </span>
           </button>
@@ -4040,7 +4056,7 @@ const LandingPage = () => {
               ))}
             </div>
             <div className="lp-trust-text">
-              <span className="lp-trust-count">30+ students</span> already registered
+              <span className="lp-trust-count">20+ students</span> already registered
             </div>
           </div>
 
@@ -4079,9 +4095,9 @@ const LandingPage = () => {
   <div className="lp-container-inner-premium">
     <div className="lp-section-header-premium">
       <span className="lp-section-tag-premium">The Transformation</span>
-      <h2 className="lp-section-title-premium">Why This Introductory Clarity Session?</h2>
+      <h2 className="lp-section-title-premium">Why This Introductory SKilastra Session?</h2>
       <p className="lp-section-desc-premium">
-        Watch the transformation that happens in just one session
+        Watch how confusion turns into confidence in just one honest session
       </p>
     </div>
     
@@ -4089,12 +4105,13 @@ const LandingPage = () => {
       <div className="lp-transform-card lp-transform-before">
         <div className="lp-transform-icon">😰</div>
         <h3>Before Session</h3>
-        <ul>
-          <li>Confused about career direction</li>
-          <li>Uncertain which skills to learn</li>
-          <li>Overwhelmed by options</li>
-          <li>Lack of confidence in decisions</li>
-          <li>Fear of making wrong choices</li>
+        <ul >
+          <li>Too many career options, no direction</li>
+<li>Unsure what skill to start with</li>
+<li>Low confidence despite learning</li>
+<li>Fear of choosing wrong path</li>
+<li>No real guidance or roadmap</li>
+
         </ul>
         <div className="lp-transform-label">Self-Doubt</div>
       </div>
@@ -4109,11 +4126,12 @@ const LandingPage = () => {
         <div className="lp-transform-icon">🎯</div>
         <h3>After Session</h3>
         <ul>
-          <li>Clear career roadmap in hand</li>
-          <li>Know exactly what to learn first</li>
-          <li>Understand market demands</li>
-          <li>Confidence in next steps</li>
-          <li>Personalized action plan</li>
+         <li>Clear understanding of next steps</li>
+<li>Realistic learning expectations</li>
+<li>Confidence in skill direction</li>
+<li>Clarity about Skilastra system</li>
+<li>Personal action plan</li>
+
         </ul>
         <div className="lp-transform-label lp-transform-success">Self-Confidence</div>
       </div>
@@ -4121,7 +4139,7 @@ const LandingPage = () => {
 
     <div className="lp-transform-quote">
       <span className="lp-quote-icon">💡</span>
-      <p>"One session can change your entire career trajectory when guided by the right mentor"</p>
+      <p>"One honest session can save years of confusion."</p>
     </div>
   </div>
 </section>
@@ -4159,7 +4177,8 @@ const LandingPage = () => {
       <span className="lp-section-tag-premium">Not Just Theory</span>
       <h2 className="lp-section-title-premium">Real Career & Skill Exposure</h2>
       <p className="lp-section-desc-premium">
-        Experience how real career guidance and skill assessment works
+       See how real career clarity and skill thinking actually works offline
+
       </p>
     </div>
     
@@ -4203,7 +4222,7 @@ const LandingPage = () => {
 
     <div className="lp-experience-highlight">
       <div className="lp-highlight-badge">🎯 Career Clarity + Real Exposure</div>
-      <p>This isn't a coding bootcamp - it's a structured career clarity session that gives you real direction</p>
+      <p>This session shows how learning turns into confidence and execution</p>
     </div>
   </div>
 </section>
@@ -4453,13 +4472,14 @@ const LandingPage = () => {
             </div>
 
             <h2 className="lp-cta-final-title">
-              Your Career Clarity Starts
+             Attend This Session Before You Decide Anything
               <span className="lp-cta-final-highlight">January 11, 2026</span>
             </h2>
             
             <p className="lp-cta-final-subtitle">
-              Don't let confusion hold you back. Book your FREE offline clarity session now 
-              and take the first step toward a confident, skilled future.
+            This FREE offline session exists to help you decide clearly —
+not to sell blindly.
+
             </p>
 
             <div className="lp-urgency-banner-final">
@@ -4476,7 +4496,8 @@ const LandingPage = () => {
               <span className="lp-cta-final-bg"></span>
               <span className="lp-cta-final-text">
                 <span className="lp-cta-final-icon">🎯</span>
-                Reserve My FREE Seat Now
+                Reserve My FREE Offline Seat Now
+
                 <span className="lp-cta-final-arrow">→</span>
               </span>
             </button>
@@ -4490,8 +4511,26 @@ const LandingPage = () => {
             </div>
 
             <div className="lp-footer-note">
-              <p>Questions? WhatsApp us at +91 8305144924</p>
-            </div>
+  <div className="lp-footer-note-inner">
+    <div className="lp-footer-question">
+      <span className="lp-footer-icon">💬</span>
+      <span>Have Questions?</span>
+    </div>
+    <a 
+      href="https://wa.me/918305144924" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="lp-footer-whatsapp-btn"
+      id="lp-footer-whatsapp"
+      data-button="footer-whatsapp"
+      onClick={() => trackButtonClick('lp-footer-whatsapp', 'WhatsApp - Footer', 'https://wa.me/918305144924')}
+    >
+      <span className="lp-footer-whatsapp-icon">📱</span>
+      <span className="lp-footer-whatsapp-text">Still Confused ? Get Connected With Us</span>
+      <span className="lp-footer-whatsapp-arrow">→</span>
+    </a>
+  </div>
+</div>
           </div>
         </div>
       </section>
@@ -5000,7 +5039,388 @@ useEffect(() => {
         /* ========================================
    NEW SECTIONS CSS - ADD TO YOUR STYLES
    ======================================== */
+.lp-footer-note {
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
 
+.lp-footer-note-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2.5rem 3rem;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.lp-footer-note-inner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(168, 85, 247, 0.05), rgba(59, 130, 246, 0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lp-footer-note-inner:hover::before {
+  opacity: 1;
+}
+
+.lp-footer-note-inner:hover {
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 12px 40px rgba(168, 85, 247, 0.2);
+}
+
+/* Question Label */
+.lp-footer-question {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.lp-footer-icon {
+  font-size: 1.5rem;
+  animation: iconFloat 2s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes iconFloat {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+/* WhatsApp Button */
+.lp-footer-whatsapp-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.25rem 3rem;
+  background: transparent;
+  border: none;
+  border-radius: 60px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: 1;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.lp-footer-whatsapp-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #25d366, #128c7e);
+  border-radius: 60px;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.lp-footer-whatsapp-btn:hover {
+  transform: translateY(-4px) scale(1.03);
+}
+
+.lp-footer-whatsapp-btn:hover::before {
+  box-shadow: 0 15px 50px rgba(37, 211, 102, 0.5);
+}
+
+.lp-footer-whatsapp-btn::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  transform: translateX(-100%);
+  transition: transform 0.6s ease;
+  z-index: 0;
+}
+
+.lp-footer-whatsapp-btn:hover::after {
+  transform: translateX(100%);
+}
+
+.lp-footer-whatsapp-icon {
+  font-size: 1.5rem;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.lp-footer-whatsapp-text {
+  position: relative;
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.lp-footer-whatsapp-arrow {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.lp-footer-whatsapp-btn:hover .lp-footer-whatsapp-arrow {
+  transform: translateX(6px);
+}
+
+/* ========================================
+   RESPONSIVE BREAKPOINTS
+   ======================================== */
+
+/* Tablet and Below (1024px) */
+@media (max-width: 1024px) {
+  .lp-footer-note-inner {
+    padding: 2rem 2rem;
+  }
+  
+  .lp-footer-question {
+    font-size: 1.15rem;
+  }
+  
+  .lp-footer-whatsapp-btn {
+    padding: 1.15rem 2.5rem;
+    font-size: 1.05rem;
+  }
+}
+
+/* Tablet Portrait (768px) */
+@media (max-width: 768px) {
+  .lp-footer-note {
+    margin-top: 2rem;
+    padding-top: 2rem;
+  }
+  
+  .lp-footer-note-inner {
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+  }
+  
+  .lp-footer-question {
+    font-size: 1.1rem;
+    gap: 0.5rem;
+  }
+  
+  .lp-footer-icon {
+    font-size: 1.4rem;
+  }
+  
+  .lp-footer-whatsapp-btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .lp-footer-whatsapp-icon {
+    font-size: 1.4rem;
+  }
+  
+  .lp-footer-whatsapp-arrow {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile Landscape (640px) */
+@media (max-width: 640px) {
+  .lp-footer-note-inner {
+    padding: 1.75rem 1.25rem;
+    gap: 1rem;
+  }
+  
+  .lp-footer-question {
+    font-size: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .lp-footer-whatsapp-btn {
+    padding: 0.875rem 1.75rem;
+    font-size: 0.95rem;
+    gap: 0.75rem;
+  }
+  
+  .lp-footer-whatsapp-text {
+    white-space: normal;
+    word-break: break-word;
+    text-align: center;
+  }
+}
+
+/* Small Mobile (480px) */
+@media (max-width: 480px) {
+  .lp-footer-note {
+    margin-top: 1.75rem;
+    padding-top: 1.75rem;
+  }
+  
+  .lp-footer-note-inner {
+    padding: 1.5rem 1rem;
+    border-radius: 20px;
+  }
+  
+  .lp-footer-question {
+    font-size: 0.95rem;
+  }
+  
+  .lp-footer-icon {
+    font-size: 1.3rem;
+  }
+  
+  .lp-footer-whatsapp-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    gap: 0.5rem;
+    border-radius: 50px;
+  }
+  
+  .lp-footer-whatsapp-icon {
+    font-size: 1.25rem;
+  }
+  
+  .lp-footer-whatsapp-text {
+    font-size: 0.9rem;
+  }
+  
+  .lp-footer-whatsapp-arrow {
+    font-size: 1rem;
+  }
+}
+
+/* Extra Small Mobile (375px - iPhone SE) */
+@media (max-width: 375px) {
+  .lp-footer-note-inner {
+    padding: 1.25rem 0.875rem;
+  }
+  
+  .lp-footer-question {
+    font-size: 0.9rem;
+  }
+  
+  .lp-footer-whatsapp-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.85rem;
+  }
+  
+  .lp-footer-whatsapp-text {
+    font-size: 0.85rem;
+  }
+}
+
+/* ========================================
+   FIX OVERFLOW ISSUES
+   ======================================== */
+
+/* Ensure no horizontal overflow */
+.lp-footer-note,
+.lp-footer-note * {
+  box-sizing: border-box;
+}
+
+.lp-footer-note-inner {
+  overflow: hidden;
+}
+
+.lp-footer-whatsapp-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* ========================================
+   TOUCH IMPROVEMENTS FOR MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .lp-footer-whatsapp-btn {
+    min-height: 48px; /* Minimum touch target */
+    touch-action: manipulation; /* Improve touch response */
+  }
+  
+  /* Remove hover effects on touch devices */
+  @media (hover: none) {
+    .lp-footer-whatsapp-btn:hover {
+      transform: none;
+    }
+    
+    .lp-footer-note-inner:hover {
+      box-shadow: none;
+      border-color: rgba(255, 255, 255, 0.1);
+    }
+    
+    .lp-footer-note-inner:hover::before {
+      opacity: 0;
+    }
+  }
+}
+
+/* Active state for mobile tap */
+.lp-footer-whatsapp-btn:active {
+  transform: scale(0.98);
+}
+
+/* ========================================
+   ACCESSIBILITY
+   ======================================== */
+
+/* Focus state for keyboard navigation */
+.lp-footer-whatsapp-btn:focus {
+  outline: 3px solid rgba(37, 211, 102, 0.5);
+  outline-offset: 4px;
+}
+
+.lp-footer-whatsapp-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .lp-footer-note-inner {
+    border: 2px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  .lp-footer-whatsapp-btn::before {
+    background: #25d366;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .lp-footer-icon,
+  .lp-footer-whatsapp-btn,
+  .lp-footer-note-inner,
+  .lp-footer-whatsapp-arrow {
+    animation: none;
+    transition: none;
+  }
+}
 /* Logo at Top Right */
 .lp-logo-container {
   position: fixed;
@@ -5089,6 +5509,7 @@ useEffect(() => {
   content: '•';
   position: absolute;
   left: 0.5rem;
+  top: 5px;
   color: var(--accent-purple);
   font-size: 1.5rem;
 }
