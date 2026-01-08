@@ -4545,6 +4545,123 @@ not to sell blindly.
     </div>
   );
 };
+// Privacy Policy Component - Add after LandingPage component
+const PrivacyPolicy = () => {
+  return (
+    <div className="privacy-policy-container">
+      <div className="privacy-policy-content">
+        <h1 className="privacy-policy-title">Privacy Policy</h1>
+        <p className="privacy-policy-date">Last Updated: January 08, 2026</p>
+
+        <section className="privacy-section">
+          <h2>1. Information We Collect</h2>
+          <p>We collect information that you provide directly to us when you:</p>
+          <ul>
+            <li>Register for our introductory sessions or workshops</li>
+            <li>Apply for ambassador programs or internships</li>
+            <li>Contact us through forms, email, or WhatsApp</li>
+            <li>Subscribe to our newsletters or updates</li>
+          </ul>
+          <p>This information may include your name, email address, phone number, educational background, and any other details you choose to provide.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>2. How We Use Your Information</h2>
+          <p>We use the information we collect to:</p>
+          <ul>
+            <li>Process your registrations and applications</li>
+            <li>Communicate with you about our programs and services</li>
+            <li>Send you updates, newsletters, and promotional materials</li>
+            <li>Improve our website and services</li>
+            <li>Analyze usage patterns and trends</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>3. Information Sharing</h2>
+          <p>We do not sell, trade, or rent your personal information to third parties. We may share your information only in the following circumstances:</p>
+          <ul>
+            <li>With your explicit consent</li>
+            <li>To comply with legal obligations</li>
+            <li>To protect our rights and prevent fraud</li>
+            <li>With service providers who assist in our operations (under strict confidentiality agreements)</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>4. Data Security</h2>
+          <p>We implement appropriate technical and organizational measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet is 100% secure.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>5. Cookies and Tracking</h2>
+          <p>We use cookies and similar tracking technologies to enhance your experience on our website. This includes:</p>
+          <ul>
+            <li>Google Tag Manager for analytics and tracking</li>
+            <li>Meta Pixel for advertising and analytics</li>
+            <li>Essential cookies for website functionality</li>
+          </ul>
+          <p>You can control cookie preferences through your browser settings.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>6. Third-Party Services</h2>
+          <p>Our website may contain links to third-party services including:</p>
+          <ul>
+            <li>Google Forms for registrations</li>
+            <li>WhatsApp for communication</li>
+            <li>Instagram for social media engagement</li>
+          </ul>
+          <p>These services have their own privacy policies, and we are not responsible for their practices.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>7. Your Rights</h2>
+          <p>You have the right to:</p>
+          <ul>
+            <li>Access your personal information</li>
+            <li>Correct inaccurate data</li>
+            <li>Request deletion of your data</li>
+            <li>Opt-out of marketing communications</li>
+            <li>Withdraw consent at any time</li>
+          </ul>
+        </section>
+
+        <section className="privacy-section">
+          <h2>8. Children's Privacy</h2>
+          <p>Our services are designed for students aged 14 and above. If you are under 18, please ensure you have parental consent before providing any personal information.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>9. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time. We will notify you of any significant changes by posting the new policy on this page and updating the "Last Updated" date.</p>
+        </section>
+
+        <section className="privacy-section">
+          <h2>10. Contact Us</h2>
+          <p>If you have any questions about this Privacy Policy, please contact us:</p>
+          <ul>
+            <li>Email: {EMAIL}</li>
+            <li>Phone: {PHONE}</li>
+            <li>WhatsApp: <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noopener noreferrer">{WHATSAPP_NUMBER}</a></li>
+          </ul>
+        </section>
+
+        <div className="privacy-footer">
+          <button 
+            className="btn-primary"
+            onClick={() => {
+              window.history.pushState({}, '', '/');
+              window.dispatchEvent(new PopStateEvent('popstate'));
+            }}
+          >
+            ← Back to Home
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default function App() {
   const [theme, setTheme] = useState('dark');
@@ -4560,6 +4677,7 @@ export default function App() {
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   const [stats, setStats] = useState({ students: 0, projects: 0, partners: 0 });
   const [showLP, setShowLP] = useState(false);
+  const [showPrivacy, setShowPrivacy] = useState(false);
   const [currentRoute, setCurrentRoute] = useState('/');
   const fullText = "INDIA'S FIRST TECH REVOLUTION";
 
@@ -4651,6 +4769,7 @@ useEffect(() => {
   const checkRoute = () => {
     const path = window.location.pathname;
     setShowLP(path === '/lp');
+    setShowPrivacy(path === '/privacy-policy');
   };
   
   checkRoute();
@@ -4982,6 +5101,208 @@ useEffect(() => {
         
         <div className="loader-text">SKILASTRA</div>
         <div className="loader-bar"></div>
+      </div>
+    );
+  }
+ if (showPrivacy) {
+    return (
+      <div className="app">
+        <style>{`
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        :root[data-theme="dark"] {
+          --bg-primary: #050505;
+          --bg-secondary: #0a0a0a;
+          --bg-glass: rgba(15, 15, 25, 0.6);
+          --text-primary: #ffffff;
+          --text-secondary: #b4b4b4;
+          --accent-purple: #a855f7;
+          --accent-blue: #3b82f6;
+          --glow-purple: rgba(168, 85, 247, 0.2);
+          --glow-blue: rgba(59, 130, 246, 0.2);
+        }
+
+        :root[data-theme="light"] {
+          --bg-primary: #ffffff;
+          --bg-secondary: #f9fafb;
+          --bg-glass: rgba(255, 255, 255, 0.6);
+          --text-primary: #0a0a0a;
+          --text-secondary: #6b7280;
+          --accent-purple: #9333ea;
+          --accent-blue: #2563eb;
+          --glow-purple: rgba(147, 51, 234, 0.15);
+          --glow-blue: rgba(37, 99, 235, 0.15);
+        }
+
+        body {
+          font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+          background: var(--bg-primary);
+          color: var(--text-primary);
+          overflow-x: hidden;
+          transition: background 0.3s ease;
+        }
+
+        .app {
+          min-height: 100vh;
+          position: relative;
+          width: 100%;
+          overflow-x: hidden;
+        }
+
+        /* Privacy Policy Styles */
+        .privacy-policy-container {
+          min-height: 100vh;
+          background: var(--bg-primary);
+          padding: 10rem 2rem 6rem;
+        }
+
+        .privacy-policy-content {
+          max-width: 900px;
+          margin: 0 auto;
+          background: var(--bg-glass);
+          backdrop-filter: blur(20px);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 24px;
+          padding: 4rem;
+          box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .privacy-policy-title {
+          font-size: 3rem;
+          font-weight: 900;
+          margin-bottom: 1rem;
+          background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-align: center;
+        }
+
+        .privacy-policy-date {
+          text-align: center;
+          color: var(--text-secondary);
+          font-size: 1rem;
+          margin-bottom: 3rem;
+        }
+
+        .privacy-section {
+          margin-bottom: 3rem;
+        }
+
+        .privacy-section h2 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          color: var(--accent-purple);
+          margin-bottom: 1rem;
+        }
+
+        .privacy-section p {
+          color: var(--text-secondary);
+          line-height: 1.8;
+          font-size: 1.05rem;
+          margin-bottom: 1rem;
+        }
+
+        .privacy-section ul {
+          list-style: none;
+          padding-left: 0;
+          margin: 1rem 0;
+        }
+
+        .privacy-section li {
+          color: var(--text-secondary);
+          line-height: 1.8;
+          font-size: 1.05rem;
+          padding: 0.5rem 0;
+          padding-left: 2rem;
+          position: relative;
+        }
+
+        .privacy-section li::before {
+          content: '→';
+          position: absolute;
+          left: 0;
+          color: var(--accent-purple);
+          font-weight: 700;
+        }
+
+        .privacy-section a {
+          color: var(--accent-purple);
+          text-decoration: none;
+          transition: color 0.3s ease;
+        }
+
+        .privacy-section a:hover {
+          color: var(--accent-blue);
+        }
+
+        .privacy-footer {
+          text-align: center;
+          margin-top: 3rem;
+          padding-top: 3rem;
+          border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .btn-primary {
+          padding: 0.75rem 1.75rem;
+          background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+          border: none;
+          border-radius: 50px;
+          color: white;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px var(--glow-purple);
+        }
+
+        .btn-primary:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 8px 25px var(--glow-purple);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+          .privacy-policy-container {
+            padding: 8rem 1.5rem 4rem;
+          }
+          
+          .privacy-policy-content {
+            padding: 2.5rem 2rem;
+          }
+          
+          .privacy-policy-title {
+            font-size: 2rem;
+          }
+          
+          .privacy-section h2 {
+            font-size: 1.5rem;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .privacy-policy-content {
+            padding: 2rem 1.5rem;
+          }
+          
+          .privacy-policy-title {
+            font-size: 1.8rem;
+          }
+          
+          .privacy-section h2 {
+            font-size: 1.3rem;
+          }
+          
+          .privacy-section p,
+          .privacy-section li {
+            font-size: 0.95rem;
+          }
+        }
+        `}</style>
+        <PrivacyPolicy />
       </div>
     );
   }
