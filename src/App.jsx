@@ -12039,6 +12039,7 @@ font-size: 0.85rem;
         <a onClick={() => scrollToSection('parents')}>Parents</a>
         <a onClick={() => scrollToSection('team')}>Team</a>
         <a onClick={() => scrollToSection('tracks')}>Cohorts</a>
+        <a onClick={() => { window.history.pushState({}, '', '/privacy-policy'); window.dispatchEvent(new PopStateEvent('popstate')); }}>Privacy Policy</a>
       </div>
 
       <div className="footer-bottom">
